@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class DeathSnail : MonoBehaviour
 {
 
-        public void deathSnail(Collision collision){
+        public void deathSnail(Collider collision){
 //if(collision.gameObject.tag == "Player"){Destroy(collision.gameObject, 0);print("player has Died!");}
 
  if(collision.gameObject.name == "Player"){SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);}
